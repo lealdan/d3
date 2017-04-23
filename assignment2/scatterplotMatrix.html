@@ -1,0 +1,107 @@
+<html>
+<head>
+<script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+<title>Scatterplot Matrix of Challenger Incident Data</title>
+<style type="text/css">
+	header {
+		display: block;
+		text-align: center;
+	}
+
+	body {
+		font-family: sans-serif;
+		font-size: 10px;
+	}
+
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #002b53;
+		shape-rendering: crispEdges;
+	}
+
+	circle {
+		fill: #f00;
+		stroke: #000;
+	}
+
+	.label {
+		text-anchor: middle;
+		font-size: 11px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	.box {
+		outline-style:double;
+		outline-color: #92c290
+	}
+
+	.mat_title {
+		position:relative;
+		display: inline-block;
+		text-align: center;
+		bottom: 152px;
+		font-size: 20px;
+		width: 300px;
+		height: 172px;
+		outline-style:double;
+		outline-color: #92c290
+	}
+
+	div.tooltip {
+		white-space: pre;
+	    position: absolute;
+	    text-align: center;
+	    padding: 2px;
+	    font: 12px sans-serif;
+	    background: lightsteelblue;
+	    border: 0px;
+	    border-radius: 8px;
+	    pointer-events: none;
+	}
+
+</style>
+</head>
+	<header>
+		<h1>Scatterplot Matrix of Challenger Incident Data</h1>
+	</header>
+<body>
+	<span id="oRing" class="mat_title"> Num O Ring Distress
+	</span>
+	<span id="pointsSVG1" class="box">
+	</span>
+	<span id="pointsSVG2" class="box">
+	</span>
+	<span id="pointsSVG3" class="box">
+	</span>
+	<span id="pointsSVG4" class="box">
+	</span>
+	<span id="launchTemp" class="mat_title"> Launch Temp
+	</span>
+	<span id="pointsSVG5" class="box">
+	</span>
+	<span id="pointsSVG6" class="box">
+	</span>
+	<span id="pointsSVG7" class="box">
+	</span>
+	<span id="pointsSVG8" class="box">
+	</span>
+	<span id="leakCheckPressure" class="mat_title"> Leak Check Pressure
+	</span>
+	<span id="pointsSVG9" class="box">
+	</span>
+	<span id="pointsSVG10" class="box">
+	</span>
+	<span id="pointsSVG11" class="box">
+	</span>
+	<span id="pointsSVG12" class="box">
+	</span>
+	<span id="tufteMetric" class="mat_title"> Tufte Metric
+	</span>
+
+	<script type="text/javascript" src="scatterplotMatrix.js"></script>
+</body>
+
+
+</html>
