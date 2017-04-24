@@ -1,38 +1,37 @@
 <html>
 <head>
 <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+<title>Parallel Coordinates of Challenger Incident Data</title>
 <style>
 
 svg {
-  font: 10px sans-serif;
+  font: 16px sans-serif;
 }
 
-.background path {
-  fill: none;
-  stroke: #ddd;
-  shape-rendering: crispEdges;
+.title {
+    text-align: center;
 }
 
-.foreground path {
+.data_lines path {
   fill: none;
-  stroke: steelblue;
+  stroke: orange;
+  stroke-width: 3;
 }
 
 .axis line,
 .axis path {
   fill: none;
-  stroke: #000;
+  stroke: #dddddd;
   shape-rendering: crispEdges;
-}
-
-.axis text {
-  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
-  cursor: move;
+  stroke-width: 5;
 }
 
 </style>
 </head>
 <body>
+    <header>
+        <h1 class="title">Parallel Coordinates of Challenger Incident Data</h1>
+    </header>
     <script type="text/javascript" src="parallelCoordinates.js"></script>
 </body>
 </html>

@@ -32,23 +32,6 @@
 		cursor: pointer;
 	}
 
-	.box {
-		outline-style:double;
-		outline-color: #92c290
-	}
-
-	.mat_title {
-		position:relative;
-		display: inline-block;
-		text-align: center;
-		bottom: 152px;
-		font-size: 20px;
-		width: 300px;
-		height: 172px;
-		outline-style:double;
-		outline-color: #92c290
-	}
-
 	div.tooltip {
 		white-space: pre;
 	    position: absolute;
@@ -61,47 +44,87 @@
 	    pointer-events: none;
 	}
 
+	.table_row {
+		display:table-row;
+		width: auto;
+	}
+
+	.table_cell {
+		width: auto;
+		display: table-cell;
+		outline-style: solid;
+		outline-color: #0099cc;
+		background-color: #dddddd;
+	}
+
+	.table_cell_title {
+		width: auto;
+		display:table-cell;
+		text-align: center;
+		background-color:#c0d6e4;
+		vertical-align: middle;
+		outline-style: solid;
+		outline-color: #0099cc;
+	}
+
+	.mat_title {
+		font-size: 28px;
+		font-style: oblique;
+	}
+
 </style>
 </head>
 	<header>
 		<h1>Scatterplot Matrix of Challenger Incident Data</h1>
 	</header>
 <body>
-	<span id="oRing" class="mat_title"> Num O Ring Distress
-	</span>
-	<span id="pointsSVG1" class="box">
-	</span>
-	<span id="pointsSVG2" class="box">
-	</span>
-	<span id="pointsSVG3" class="box">
-	</span>
-	<span id="pointsSVG4" class="box">
-	</span>
-	<span id="launchTemp" class="mat_title"> Launch Temp
-	</span>
-	<span id="pointsSVG5" class="box">
-	</span>
-	<span id="pointsSVG6" class="box">
-	</span>
-	<span id="pointsSVG7" class="box">
-	</span>
-	<span id="pointsSVG8" class="box">
-	</span>
-	<span id="leakCheckPressure" class="mat_title"> Leak Check Pressure
-	</span>
-	<span id="pointsSVG9" class="box">
-	</span>
-	<span id="pointsSVG10" class="box">
-	</span>
-	<span id="pointsSVG11" class="box">
-	</span>
-	<span id="pointsSVG12" class="box">
-	</span>
-	<span id="tufteMetric" class="mat_title"> Tufte Metric
-	</span>
+	<table>
+		<div class="table_row">
+			<div class="table_cell_title">
+				<span id="oRing" class="mat_title"> Num O Ring Distress </span>
+			</div>
+			<span id="pointsSVG1" class="table_cell">
+			</span>
+			<span id="pointsSVG2" class="table_cell">
+			</span>
+			<span id="pointsSVG3" class="table_cell">
+			</span>
+		</div>
+		<div class="table_row">
+			<span id="pointsSVG4" class="table_cell">
+			</span>
+			<div class="table_cell_title">
+				<span id="launchTemp" class="mat_title"> Launch Temp </span>
+			</div>
+			<span id="pointsSVG5" class="table_cell">
+			</span>
+			<span id="pointsSVG6" class="table_cell">
+			</span>
+		</div>
+		<div class="table_row">
+			<span id="pointsSVG7" class="table_cell">
+			</span>
+			<span id="pointsSVG8" class="table_cell">
+			</span>
+			<div class="table_cell_title">
+				<span id="leakCheckPressure" class="mat_title"> Leak Check Pressure </span>
+			</div>
+			<span id="pointsSVG9" class="table_cell">
+			</span>
+		</div>
+		<div class="table_row">
+			<span id="pointsSVG10" class="table_cell">
+			</span>
+			<span id="pointsSVG11" class="table_cell">
+			</span>
+			<span id="pointsSVG12" class="table_cell">
+			</span>
+			<div class="table_cell_title">
+				<span id="tufteMetric" class="mat_title"> Tufte Metric </span>
+			</div>
+		</div>
+	</table>
 
 	<script type="text/javascript" src="scatterplotMatrix.js"></script>
 </body>
-
-
 </html>
